@@ -30,19 +30,38 @@
             <h1 class="content">👈Click To Speak</h1>
         </div>
     <br>
-        <div>
-        <br>
-        <button class="button1" onclick="location.href='https://imasishranjan.github.io/chiki_chatbot/'">Chat To CHIKI</button>
-        </div>
-         <br>
-        <div>
-        <br>
-        <button class="button1" onclick="location.href='https://imasishranjan.github.io/weatherchiki/'">Check Weather</button>
+         <!--button ripple effect-->
+        <div class="wrapper">
+         <div class="btns">
+            <a href="https://imasishranjan.github.io/chiki_chatbot/">Chat with me</a>
+            <br>
+            <a href="https://imasishranjan.github.io/weatherchiki/">Check Weather</a>
+         </div>
         </div>
    
     <!-------------------------------------------------------- Js Linkage ----------------------------------------------------------------------->
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/595a890311.js" crossorigin="anonymous"></script>
+
+         <!----------------------button ripple effects javascript code-------------------->
+
+    <script>
+        const buttons = document.querySelectorAll("a");
+        buttons.forEach((button) => {
+          button.onclick = function(e){
+            let x = e.clientX - e.target.offsetLeft;
+            let y = e.clientY - e.target.offsetTop;
+            let ripple = document.createElement("span");
+            ripple.style.left = `${x}px`;
+            ripple.style.top = `${y}px`;
+            this.appendChild(ripple);
+            setTimeout(function(){
+              ripple.remove();
+            }, 600); // 1second = 1000ms
+          }
+        });
+        
+     </script>
 </body>
 
 </html>
