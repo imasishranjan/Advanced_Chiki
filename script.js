@@ -133,7 +133,38 @@ function speakThis(message) {
         const finalText = "Chiki is Opening The youtube";
         speech.text = finalText;
     }
+ else if(message.includes('open flipkart')|| message.includes('flipkart')) {
+        window.open("https://flipkart.com", "_blank");
+        const finalText = "chiki is Opening The flipkart";
+        speech.text = finalText;
+    }
+    else if(message.includes('open amazon')|| message.includes('amazon')) {
+        window.open("https://amazon.com", "_blank");
+        const finalText = "chiki is Opening The amazon";
+        speech.text = finalText;
+    }
+    else if(message.includes('open swiggy')|| message.includes('swiggy')) {
+        window.open("https://swiggy.com", "_blank");
+        const finalText = "chiki is Opening The swiggy , you can order your favorite food and deliver these items in your home";
+        speech.text = finalText;
+    }
+    else if(message.includes('open zomato')|| message.includes('zomato')) {
+        window.open("https://zomato.com", "_blank");
+        const finalText = "chiki is Opening The zomato , to order your favorite food items in your home";
+        speech.text = finalText;
+    }
+    else if(message.includes('open netflix')|| message.includes('netflix')) {
+        window.open("https://netflix.com", "_blank");
+        const finalText = "chiki is Opening The netflix , to see your favorite movie items ";
+        speech.text = finalText;
+    }
+    ///greeting our respected teachers///
 
+    else if(message.includes('give a speech')|| message.includes('tell your speech')|| message.includes('say speech')|| message.includes('speech')) {
+        
+        const finalText = "hello , Nomostay dear respected sir and mam , i am chiki , your assistant , A warm and hearty welcome to all the distinguished teachers gathered here today. It is an honor and privilege to have you all at this seminar, an occasion that celebrates the invaluable contributions you make to shaping the future of our society through education. thank u for giving me a chance to tell some word in front of yours , once again thank you and enjoy the seminar , dhonyobad";
+        speech.text = finalText;
+    }
     else if(message.includes('today weather')|| message.includes('weather')) {
         window.open("https://www.accuweather.com/en/in/ram-sagar/3188960/weather-forecast/3188960", "_blank");
         const finalText = "Chiki is Opening The Weather";
