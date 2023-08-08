@@ -162,7 +162,7 @@ function speakThis(message) {
 
     else if(message.includes('give a speech')|| message.includes('tell your speech')|| message.includes('say speech')|| message.includes('speech')) {
         
-        const finalText = "hello , Nomostay dear respected sir and mam , i am chiki , your assistant , A warm and hearty welcome to all the distinguished teachers gathered here today. It is an honor and privilege to have you all at this seminar, an occasion that celebrates the invaluable contributions you make to shaping the future of our society through education. thank u for giving me a chance to tell some word in front of yours , once again thank you and enjoy the seminar , dhonyobad";
+        const finalText = "hello , Nomostay dear respected sir and mam , i am chiki , signing in , i am an assistant , A warm and hearty welcome to all the distinguished teachers gathered here today. It is an honor and privilege to have you all at this seminar, an occasion that celebrates the invaluable contributions you make to shaping the future of our society through education. thank u for giving me a chance to tell some word in front of yours , once again thank you and enjoy the seminar , signing off , dhonyobad";
         speech.text = finalText;
     }
     else if(message.includes('today weather')|| message.includes('weather')) {
